@@ -1,0 +1,602 @@
+/* Add your custom styles below this line */
+body {
+  background-color: pink;
+}
+header {
+  background-color: pink;
+}
+
+/* Add some love-themed fonts and colors to the headings */
+h1, h2 {
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+}
+
+nav {
+  background-color: #A53E3E; /* Chocolate brown color for chocolate drip theme */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFF; /* White color for clean look */
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  color: #FFC0CB; /* Pink color for Valentines Day theme */
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section {
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+}
+
+section button {
+  background-color: #A53E3E; /* Chocolate brown color for chocolate drip theme */
+  color: #FFF; /* White color for clean look */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+section button:hover {
+  background-color: #7C2D2D; /* Darker chocolate brown color for hover effect */
+}
+
+
+.gift-item {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid red;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.gift-item img {
+  width: 30%;
+  height: auto;
+  margin: 0 20px;
+}
+
+.gift-item h3 {
+  margin: 0;
+}
+
+.gift-item p {
+  margin: 10px 0;
+}
+
+/* Add some hover effects to the buttons */
+button:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+/* Style the contact form */
+.form-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+input[type="submit"] {
+  width: 100%;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: pink;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer li {
+  margin: 0 10px;
+}
+
+footer a {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+footer form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* Add Bootstrap styles below this line */
+
+/* Use a responsive, mobile-first grid system */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Make images responsive */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Center block-level elements */
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Add some space to the sides of the container */
+.my-3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Style the navbar */
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nav-item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover, .nav-link:focus {
+  text-decoration: none;
+}
+
+/* Style the dropdown menu */
+.navbar-toggler {
+  align-self: flex-start;
+  margin-right: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.navbar-toggler:hover, .navbar-toggler:focus {
+  text-decoration: none;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+/* Style the footer */
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Add some responsive styles for smaller screens */
+@media (max-width: 575.98px) {
+  .navbar-expand-sm .navbar-nav .show > .nav-link {
+    color: #FFF;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar-expand-md .navbar-nav .show > .nav-link {
+    color: #FFF;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-expand-lg .navbar-nav .show > .nav-link {
+    color: #FFF;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .navbar-expand-xl .navbar-nav .show > .nav-link {
+    color: #FFF;
+  }
+}
+
+/* Add custom styles for Bootstrap elements */
+.btn {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  box-shadow: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: #FFF;
+  background-color: #FFC0CB; /* Pink color for Valentines Day theme */
+  border-color: #FFC0CB;
+}
+
+.btn-primary:hover {
+  color: #FFF;
+  background-color: #FF69B4; /* Darker pink color for hover effect */
+  border-color: #FF69B4;
+}
+
+.btn-secondary:hover {
+  color: #FFF;
+  background-color: #7C2D2D; /* Darker chocolate brown color for hover effect */
+  border-color: #7C2D2D;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(165, 62, 62, 0.5);
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+  color: #FFF;
+  background-color: #A53E3E; /* Chocolate brown color for chocolate drip theme */
+  border-color: #A53E3E;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  color: #FFF;
+  background-color: #7C2D2D; /* Darker chocolate brown color for active state */
+  border-color: #7C2D2D;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(165, 62, 62, 0.5);
+}
+
+/* Style the input fields in the contact form */
+form input[type="text"], form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+form input[type="submit"] {
+  background-color: #A53E3E; /* Chocolate brown color for chocolate drip theme */
+  color: #FFF; /* White color for clean look */
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #7C2D2D; /* Darker chocolate brown color for hover effect */
+}
+
+/* Add some custom styles for the gift items */
+.gift-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.gift-item img {
+  width: 30%;
+  height: auto;
+  margin: 0 20px;
+}
+
+.gift-item h3 {
+  margin: 0;
+}
+
+.gift-item p {
+  margin: 10px 0;
+}
+
+/* Style the footer */
+footer {
+  background-color: #FFF; /* White color for clean look */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer li {
+  margin: 0 10px;
+}
+
+footer a {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+footer form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Fix for issue 1 */
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  /* Fix for issue 2 */
+  box-shadow: 0 0 0 0.2rem rgba(165, 62, 62, 0.5);
+}
+
+
+/* Style the input fields in the contact form */
+form input[type="text"], form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+form input[type="submit"] {
+  background-color: #A53E3E; /* Chocolate brown color for chocolate drip theme */
+  color: #FFF; /* White color for clean look */
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #7C2D2D; /* Darker chocolate brown color for hover effect */
+}
+
+/* Add some custom styles for the gift items */
+.gift-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.gift-item img {
+  width: 30%;
+  height: auto;
+  margin: 0 20px;
+}
+
+.gift-item h3 {
+  margin: 0;
+}
+
+.gift-item p {
+  margin: 10px 0;
+}
+
+/* Style the footer */
+footer {
+  background-color: #FFF; /* White color for clean look */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer li {
+  margin: 0 10px;
+}
+
+footer a {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+footer form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Fix for issue 1 */
+}
+
+footer form label {
+  margin: 0 10px 0 0;
+}
+
+
+footer form input[type="text"], footer form textarea {
+width: 60%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+}
+
+footer form button[type="submit"] {
+background-color: #A53E3E; /* Chocolate brown color for chocolate drip theme /
+color: #FFF; / White color for clean look */
+border: none;
+padding: 10px 20px;
+font-size: 1em;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+footer form button[type="submit"]:hover {
+background-color: #7C2D2D; /* Darker chocolate brown color for hover effect */
+}
+
+/* Add some responsive styles */
+@media screen and (max-width: 992px) {
+nav ul {
+flex-direction: column;
+}
+
+nav li {
+margin: 10px 0;
+}
+
+main {
+flex-direction: column;
+}
+
+section {
+width: 100%;
+}
+}
+
+@media screen and (max-width: 768px) {
+header h1 {
+font-size: 1.5em;
+}
+
+.gift-item img {
+width: 50%;
+}
+}
+  
